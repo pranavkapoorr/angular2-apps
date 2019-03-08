@@ -1,18 +1,18 @@
 <h2>My Pokemons</h2>
 <ul class="pokemons">
-  <li *ngFor="let pokemon of pokemons" 
-  [class.selected]="pokemon === selectedPokemon" (click)="onSelect(pokemon)">
-    <span class="badge">{{pokemon.id}}</span> {{pokemon.name}}
+  <li *ngFor="let pokemon of pokemons" >
+    <a routerLink="/detail/{{pokemon.id}}">
+      <span class="badge">{{pokemon.id}}</span> {{pokemon.name}}
+      </a>
+      <button class="delete" title="delete pokemon" (click)="delete(pokemon)">x</button>
   </li>
 </ul>
-
-
-<div *ngIf="selectedPokemon">
-  <h2>{{selectedPokemon.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{selectedPokemon.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="selectedPokemon.name" placeholder="name">
+<div>
+    <label>Pokemon name:
+      <input #pokemonName />
     </label>
+    <!-- (click) passes input value to add() and then clears the input -->
+    <button (click)="add(pokemonName.value); pokemonName.value=''">
+      add
+    </button>
   </div>
-</div>
