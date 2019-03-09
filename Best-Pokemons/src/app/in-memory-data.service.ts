@@ -7,9 +7,7 @@ import { Injectable } from '@angular/core';
 })
 export class InMemoryDataService implements InMemoryDbService {
 
-  private pokemonsUrl = 'api/pokemons';  // URL to web api
-
-
+  
   createDb() {
     const pokemons = [
       { id: 1, name: 'Bulbasaur' },

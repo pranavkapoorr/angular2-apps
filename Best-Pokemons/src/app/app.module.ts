@@ -11,6 +11,7 @@ import { HttpClientModule }    from '@angular/common/http';
 //--for in memorey
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
+import { PokemonSearchComponent } from './pokemon-search/pokemon-search.component';
 //
 
 @NgModule({
@@ -19,7 +20,8 @@ import { InMemoryDataService }  from './in-memory-data.service';
     PokemonsComponent,
     PokemonDetailComponent,
     MessagesComponent,
-    DashboardComponent
+    DashboardComponent,
+    PokemonSearchComponent
   ],
   imports: [
     BrowserModule,

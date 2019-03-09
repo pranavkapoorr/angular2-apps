@@ -85,5 +85,17 @@ deletePokemon (pokemon: Pokemon | number): Observable<Pokemon> {
     catchError(this.handleError<Pokemon>('deletePokemon'))
   );
 }
+
+/* GET pokemons whose name contains search term */
+searchPokemons(term: string): Observable<Pokemon[]> {
+  if (!term.trim()) {
+    // if not search term, return empty pokemon array.
+    return of([]);
+  }
+  return this.http.get<Pokemon[]>(`${this.pokemonsUrl}/?name=${term}`).pipe(
+    tap(_ => this.log(`found pokemons matching "${term}"`)),
+    catchError(this.handleError<Pokemon[]>('searchPokemons', []))
+  );
+}
   
 }
