@@ -1,3 +1,7 @@
-<p>
-  posts works!
-</p>
+<div class="blog-post" *ngFor="let post of posts">
+  <h2 class="blog-post-title">{{post.title}}</h2>
+  <p class="blog-post-meta">{{post.date}} by <a href="#">{{post.author}}</a></p>
+
+  <p>{{post.content}}</p>
+  
+</div>
