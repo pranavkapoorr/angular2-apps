@@ -1,10 +1,10 @@
-<div id="work-experience" [@flyInOutTrigger]>
+<div id="work-experience" class="experience-main" [@flyInOutTrigger]>
   <div *ngFor="let experience of experiences" class="experience">
     <div class="exp-container">
       <h3>{{experience.title}}</h3>
       <h3>{{experience.company}}</h3>
       <p class="lead">{{experience.timeline}}</p>
-      <p class="text-light">{{experience.skills}}}</p>
+      <p class="text-light">{{experience.techstack}}</p>
     </div>
 </div>
 </div>

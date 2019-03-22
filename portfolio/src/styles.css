@@ -24,3 +24,7 @@ a{
   font-weight: 700;
   background-color: transparent
 }
+#landing-page, #work-experience, #interests, #projects, #skills, #education {
+    text-align: center;
+    margin: 3rem
+}
