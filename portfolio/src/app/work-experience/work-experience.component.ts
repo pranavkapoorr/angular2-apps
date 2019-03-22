@@ -1,10 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Experience } from '../utils/experience';
+import { FLY_IN_OUT_ANIMATION } from '../animations/flyinout';
 
 @Component({
   selector: 'app-work-experience',
   templateUrl: './work-experience.component.html',
-  styleUrls: ['./work-experience.component.css']
+  styleUrls: ['./work-experience.component.css'],
+  animations: [
+    FLY_IN_OUT_ANIMATION
+  ]
 })
 export class WorkExperienceComponent implements OnInit {
   experiences : Experience[] = [

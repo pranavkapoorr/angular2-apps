@@ -2,13 +2,16 @@
   <p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p>
   <button (click)="toggle()">{{ isOpen ? 'Open' : 'Closed' }}</button>
 </div>-->
-<div id="landing-page">
-  <h1>Hello, I'm Pranav Kapoor !</h1>
-  <h2>Sr Software Engineer, IPS-Valitor</h2>
-  <h2><i class="fas fa-phone"> +44-74887-06094</i><i class="fas fa-map-marker-alt">
-  </i><a class="mapLocation" href="https://www.google.co.in/maps/place/London/@51.528308,-0.3817814,10z/data=!3m1!4b1!4m5!3m4!1s0x47d8a00baf21de75:0x52963a5addd52a99!8m2!3d51.5073509!4d-0.1277583"> London</a></h2>
-  <p class="lead">
-     Nothing is "IMPOSSIBLE"
-  </p>
-  <a  href="./cv/Pranav_Kapoor_cv.pdf" class="btn">Download CV</a>
+<div id="landing-page" [@flyInOutTrigger]>
+  <div class="container">
+    <app-profile-pic class="dp-logo"></app-profile-pic>
+    <h4 class="short-bio">Student | Developer | Contributor</h4>
+
+    <q class="quote">I'm Nothing..doing Everything..to be Something..</q>
+    <div class="name">
+      <p>
+        PRANAV KAPOOR
+      </p>
+      <div class="strip"></div>
+    </div>
 </div>
