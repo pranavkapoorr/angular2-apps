@@ -5,26 +5,20 @@ export const FLY_IN_OUT_ANIMATION =
     
     transition(':enter', [
       style({
-	        transform: 'translateX(100%)',
-		      opacity: 0
+	        transform: 'scale(0)',
       }),
-      group([
+
         animate('0.5s 0.1s ease-in', style({
-            transform: 'translateX(0)',
+            transform: 'scale(1)',
         })),
-        animate('0.3s 0.1s ease', style({
-            opacity: 1
-        }))
-      ])
+       
     ]),
     transition(':leave', [
-      group([
+      
         animate('0.5s ease-out', style({
-            transform: 'translateX(300%)'
+            transform: 'scale(0)'
         })),
-        animate('0.3s 0.1s ease', style({
-            opacity: 0
-        }))
-      ])
+        
+      
     ])
   ]); 
