@@ -1,0 +1,18 @@
+.skill-icons{
+    overflow: auto;
+    color: #eee;
+}
+#skills h3{
+    text-align: start;
+}
+.skill-icon-list-item{
+    font-size: 4rem;
+    display: inline;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+.workflow-points{
+    text-align: start;
+    list-style-type: none;
+}

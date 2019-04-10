@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Experience } from '../utils/experience';
+import { Experience } from '../models/experience';
 import { FLY_IN_OUT_ANIMATION } from '../animations/flyinout';
 
 @Component({
