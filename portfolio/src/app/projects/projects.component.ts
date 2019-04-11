@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FLY_IN_OUT_ANIMATION } from '../animations/flyinout';
+import { ProjectService } from '../services/project-service.service';
+
 
 @Component({
   selector: 'app-projects',
@@ -10,10 +12,11 @@ import { FLY_IN_OUT_ANIMATION } from '../animations/flyinout';
   ]
 })
 export class ProjectsComponent implements OnInit {
-
-  constructor() { }
+  hero:string;
+  constructor(private projectService:ProjectService) { }
 
   ngOnInit() {
+     console.log(this.projectService.getProjects());
   }
 
 }
