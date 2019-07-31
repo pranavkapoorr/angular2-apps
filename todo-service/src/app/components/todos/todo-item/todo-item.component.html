@@ -1,0 +1,5 @@
+<div class="todo {{Todo.completed?'completed':''}}">
+  <input id={{Todo.id}} (change)="markCompleted(Todo)" type="checkbox" class="set-complete" />
+  <label for={{Todo.id}} >{{Todo.title}}</label>
+  <button (click)="onDelete(Todo)" class="delete" >x</button>
+</div>

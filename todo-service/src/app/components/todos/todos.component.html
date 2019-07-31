@@ -1,0 +1,8 @@
+<div className="todos">
+  <todo-item 
+    *ngFor="let Todo of Todos" 
+    [Todo]="Todo"
+    (deleteTodo)="deleteTodo($event)"
+  >
+  </todo-item>
+ </div>

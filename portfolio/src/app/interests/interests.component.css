@@ -1,0 +1,12 @@
+img{
+    width: 40vw;
+    height: 50vh;
+}
+/* mask for main */
+.mask {
+    -webkit-mask-box-image: url('../../assets/img/output1.png')  1 repeat;
+    mask-border: url('../../assets/img/output1.png') 1 repeat;
+}
+div {
+    background: white;
+}

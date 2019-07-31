@@ -1,0 +1,23 @@
+*,*::before,*::after {
+    box-sizing: border-box
+}
+.todo{
+    margin: 5px 0;
+    display: block;
+    background: rgba(75, 156, 180, 0.133);
+    text-align: center
+}
+.set-complete{
+    margin-right: 15px
+}
+.completed {
+    text-decoration: line-through
+}
+.delete {
+    background: #ff0000;
+    color: #fff;
+    border: none;
+    margin:0 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
