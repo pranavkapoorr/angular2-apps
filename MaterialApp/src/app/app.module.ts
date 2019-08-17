@@ -7,11 +7,13 @@ import { MaterialModule } from './material';
 import { MynavbarComponent } from './components/mynavbar/mynavbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { MainareaComponent } from './components/mainarea/mainarea.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MynavbarComponent
+    MynavbarComponent,
+    MainareaComponent
   ],
   imports: [
     BrowserModule,

@@ -18,11 +18,20 @@
 
 .logo {
   width: 200px;
-  color: rgb(236, 217, 217);
+  filter: invert(100%);
 }
 
 a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   margin-left: 2rem
+}
+.closeSidebar{
+  position: absolute;
+  right: 20px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.spacer {
+  flex: 1 1 auto
 }
